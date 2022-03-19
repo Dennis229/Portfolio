@@ -1,0 +1,95 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+@media(max-width: 2500px){
+*{
+ box-sizing: border-box;
+}
+body{
+  background-color: #496a81;
+  font-family: 'PT Sans', sans-serif;
+  margin: 0;
+  font-size: 20px;
+}
+nav{
+  background-color: #2b3a67;
+  padding: 1rem; 
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+nav a{
+  text-decoration: none;
+  color: #fff;
+  margin-left: 1rem;
+}
+#about-navbar{
+  transition: transform: 0.2s;
+}
+#about-navbar:hover{
+  transform: scale(1.25);
+}
+#projects-navbar{
+  transition: transform: 0.2s;
+}
+#projects-navbar:hover{
+  transform: scale(1.25);
+}
+header{
+  background-image: url(https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
+  background-size: cover;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  position: relative;
+}
+header::after{
+  content: "";
+  background: #000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.8
+}
+header *  {
+  position: relative;
+  z-index: 1;
+}
+header h1{
+  font-size: 3rem;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+header p{
+  font-size: 1.5rem;
+  margin: 0;
+}
+#projects{
+  text-align: center;
+}
+.project-tile{
+ text-decoration: none;
+  color: #b3af8f;
+  font-size: 1.5rem;
+}
+.icon{
+  color: #fff;
+  text-decoration: none;
+  font-size: 35px;
+}
+  footer{
+  background-color: #66999b;
+  color: #fff;
+  padding: 0.5rem;
+  text-align: center;
+}}
