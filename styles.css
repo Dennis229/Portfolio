@@ -1,19 +1,22 @@
-
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
-
-@media(max-width: 2500px){
-*{
- box-sizing: border-box;
+@import url("https://fonts.google.com/specimen/Titillium+Web");
+:root {
+  --text-color: #fff;
+  --text-size-normal: 1.5rem;
+  --text-size-big: 3rem;
 }
-body{
+* {
+  box-sizing: border-box;
+}
+body {
   background-color: #496a81;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   margin: 0;
   font-size: 20px;
+  height: 100vh;
 }
-nav{
-  background-color: #2b3a67;
-  padding: 1rem; 
+nav {
+  background-color: #2b3a6777;
+  padding: 1rem;
   display: flex;
   justify-content: flex-end;
   position: fixed;
@@ -22,27 +25,33 @@ nav{
   right: 0;
   z-index: 100;
 }
-nav a{
+nav a {
   text-decoration: none;
-  color: #fff;
+  color: var(--text-color);
   margin-left: 1rem;
 }
-#about-navbar{
-  transition: transform 0.2s;
+i {
+  margin-right: 0.5rem;
 }
-#about-navbar:hover{
+.contacts {
+  text-decoration: none;
+  font-size: var(--text-size-normal)
+  color var(--text-color);
+  margin: 0 1rem;
+}
+
+#github-link:hover {
   transform: scale(1.25);
+  transition: 0.2s;
 }
-#projects-navbar{
-  transition: transform 0.2s;
-}
-#projects-navbar:hover{
+#email-link:hover {
   transform: scale(1.25);
+  transition: 0.2s;
 }
-header{
-  background-image: url(https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
+header {
+  background-image: url(https://static.wixstatic.com/media/50ea89_e4b535897dbe4d4fb73f64f14c51a1ae~mv2.jpg/v1/fill/w_640,h_426,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/50ea89_e4b535897dbe4d4fb73f64f14c51a1ae~mv2.jpg);
   background-size: cover;
-  color: #fff;
+  color: var(--text-color);
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -51,7 +60,7 @@ header{
   background-position: center;
   position: relative;
 }
-header::after{
+header::after {
   content: "";
   background: #000;
   position: absolute;
@@ -59,37 +68,66 @@ header::after{
   right: 0;
   bottom: 0;
   left: 0;
-  opacity: 0.8
+  opacity: 0.8;
 }
-header *  {
+header * {
   position: relative;
   z-index: 1;
 }
-header h1{
-  font-size: 3rem;
-  margin-bottom: 5px;
+header h1 {
+  font-size: var( --text-size-big);
+  margin-bottom: 1.5rem;
   margin-top: 0;
 }
-header p{
-  font-size: 1.5rem;
+header p {
+  font-size: var(--text-size-normal);
   margin: 0;
-}
-#projects{
   text-align: center;
 }
-.project-tile{
- text-decoration: none;
-  color: #b3af8f;
-  font-size: 1.5rem;
+section{
+  text-align: center;
+  font-size: var(--text-size-normal);
 }
-.icon{
-  color: #fff;
+.projects-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.project-tile {
   text-decoration: none;
-  font-size: 35px;
+  margin-top: 2rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  transition: transform 0.3s ease;
 }
-  footer{
+.project-tile:hover {
+  transform: scale(1.05);
+}
+
+.project-tile img {
+  max-width: 100%;
+}
+.project-tile p {
+  color: var(--text-color);
+  font-size: var(--text-size-normal);
+}
+.project-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5%;
+  height: 100%;
+  object-fit: cover;
+}
+.project-tile-img {
+  height: 500px;
+  width: 500px;
+}
+footer {
   background-color: #66999b;
-  color: #fff;
+  color: var(--text-color);
   padding: 0.5rem;
   text-align: center;
-}}
+  margin-top: 5rem;
+}
