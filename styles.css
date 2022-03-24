@@ -28,13 +28,13 @@ nav a{
   margin-left: 1rem;
 }
 #about-navbar{
-  transition: transform: 0.2s;
+  transition: transform 0.2s;
 }
 #about-navbar:hover{
   transform: scale(1.25);
 }
 #projects-navbar{
-  transition: transform: 0.2s;
+  transition: transform 0.2s;
 }
 #projects-navbar:hover{
   transform: scale(1.25);
